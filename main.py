@@ -1,7 +1,7 @@
 from pathlib import Path
 from threading import Thread, Event
 import logging
-from time import ctime, time, sleep
+from time import time, sleep
 import shutil
 import argparse
 from sys import argv
