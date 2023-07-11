@@ -14,7 +14,7 @@ logger = logging.basicConfig(level=logging.DEBUG, format='%(levelname)s %(asctim
 def get_all_folders(path: Path, data: list) -> bool:
     status = False
     try:
-        if len(os.listdir(path)) == 0:
+         if not os.listdir(path):
             return True
         
         for folder in path.iterdir():
