@@ -1,13 +1,7 @@
 from time import time
 
 def factorize(*numbers):
-    data = []
-    for number in numbers:
-        factors = []
-        for i in range(1, number + 1):
-            if number % i == 0:
-                factors.append(i)
-        data.append(factors)
+    data = [[i for i in range(1, number + 1) if number % i == 0] for number in numbers]
     return data
 
 if __name__ == '__main__':
